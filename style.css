@@ -185,6 +185,7 @@ section {
 }
 
 .name {
+    color: #152d36;
     font-size: 100px;
     line-height: 0.75;
 }
@@ -286,6 +287,157 @@ section {
 .switch-btn:hover {
     color: #f07a27;
 }
+
+#contact-feedback {
+    background-color: #152d36;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-feedback-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.contact, .feedback {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+
+.contact h2, .feedback h2 {
+    font-size: 24px;
+    color: #152d36;
+    margin-bottom: 15px;
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact li {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.contact a {
+    color: #e3651d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #f07a27;
+}
+
+.contact p, .feedback p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.feedback textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.feedback textarea:focus {
+    border-color: #e3651d;
+}
+
+.auth-btn {
+    background-color: #e3651d;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    font-family: "Konkhmer Sleokchher", serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.auth-btn:hover {
+    background-color: #f07a27;
+}
+
+#about-author {
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0 50px;
+    width: 100%;
+}
+
+#about-author h2 {
+    font-size: 28px;
+    color: #152d36;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about-author .content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#about-author .content .author-info {
+    flex: 1;
+    max-width: 45%;
+}
+
+#about-author .content .website-info {
+    flex: 1;
+    max-width: 45%;
+}
+
+#about-author .author-info h3,
+#about-author .website-info h3 {
+    font-size: 22px;
+    color: #152d36;
+    margin-bottom: 15px;
+}
+
+#about-author .author-info p,
+#about-author .website-info p {
+    text-align: justify;
+    font-size: 16px;
+    color: #555;
+}
+
+#about-author .author-info {
+    padding-right: 30px;
+}
+
+#about-author .author-info:last-child {
+    border-right: none;
+}
+
+footer {
+    text-align: center;
+    color: #555;
+}
+
+#bottom {
+    background-color: #fff;
+}
+
 
 @keyframes slideIn {
     from {
@@ -403,5 +555,29 @@ section {
 
     .switch-btn {
         font-size: 12px;
+    }
+
+    #contact-feedback {
+        flex-direction: column;
+    }
+
+    .contact-feedback-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact, .feedback {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    #about-author .content {
+        flex-direction: column;
+    }
+
+    #about-author .content .author-info,
+    #about-author .content .website-info {
+        max-width: 100%;
+        padding-right: 0;
     }
 }
