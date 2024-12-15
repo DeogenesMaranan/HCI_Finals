@@ -18,3 +18,13 @@ document.getElementById("close-menu").addEventListener("click", function() {
     popupMenu.classList.remove("open");
     popupMenu.classList.add("close");
 });
+
+document.getElementById("switch-to-signup").addEventListener("click", function() {
+    document.getElementById("login-form").style.display = "none";
+    document.getElementById("signup-form").style.display = "block";
+});
+
+document.getElementById("switch-to-login").addEventListener("click", function() {
+    document.getElementById("signup-form").style.display = "none";
+    document.getElementById("login-form").style.display = "block";
+});
