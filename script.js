@@ -135,4 +135,11 @@ function updateFavicon() {
       document.querySelector('footer').textContent = 'Maranan, Deogenes Gregorio S. 2024';
     }
   }
-  
+
+  document.getElementById("get-started-btn").onclick = function() {
+    document.getElementById("authentication").scrollIntoView({ behavior: "smooth" });
+};
+
+document.getElementById("get-started-btn2").onclick = function() {
+    document.getElementById("authentication").scrollIntoView({ behavior: "smooth" });
+};

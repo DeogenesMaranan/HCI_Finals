@@ -15,15 +15,15 @@
             <div id="divider"></div>
             <nav>
                 <ul>
-                    <li><a href="#forums">Forums</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="forums.html">Forums</a></li>
+                    <li><a href="#contact-feedback">Contact</a></li>
+                    <li><a href="#about-author">About</a></li>
                 </ul>
             </nav>
         </div>
 
         <div>
-            <button class="auth-btn" id="get-started-btn">Get Started</button>
+            <button class="auth-btn" id="get-started-btn" title="Click to begin the authentication process">Get Started</button>
 
             <div class="burger-menu" id="burger-menu">
                 <div></div>
@@ -34,9 +34,9 @@
             <nav id="popup-menu">
                 <a id="close-menu">&times;</a>
                 <ul>
-                    <li><a href="#forums">Forums</a></li>
+                    <li><a href="#forums" >Forums</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about" onclick="scrollToBottom()">About</a></li>
                     <br><br>
                     <li><a href="#auth">Get Started</a></li>
                 </ul>
@@ -54,7 +54,7 @@
                 <p>Your go-to space for holistic health and well-being. Here, we support
                     your journey to a healthier, balanced life with resources and tools for
                     fitness, mindfulness, nutrition, and more. Let's thrive together!</p>
-                <button class="authe-btn" id="get-started-btn2">Get Started</button>
+                <button class="authe-btn" id="get-started-btn2" title="Click to begin the authentication process">Get Started</button>
             </div>
         </div>
         <div id="authentication">
@@ -121,6 +121,7 @@
 
     <button id="floatBtn" class="float-btn" onclick="toggleMenu()" aria-label="Open menu" role="button" tabindex="0">
         <img src="assets/palm-of-hand.svg" alt="Open menu" />
+        <span class="tooltip-text">Accessibility</span>
     </button>    
     
     <div id="menu" class="menu">
