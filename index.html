@@ -54,7 +54,7 @@
                 <p>Your go-to space for holistic health and well-being. Here, we support
                     your journey to a healthier, balanced life with resources and tools for
                     fitness, mindfulness, nutrition, and more. Let's thrive together!</p>
-                <button class="authe-btn" id="get-started-btn">Get Started</button>
+                <button class="authe-btn" id="get-started-btn2">Get Started</button>
             </div>
         </div>
         <div id="authentication">
@@ -118,6 +118,32 @@
         </div>     
     </section>
     <footer>Maranan, Deogenes Gregorio S. 2024</footer>
+
+    <button id="floatBtn" class="float-btn" onclick="toggleMenu()" aria-label="Open menu" role="button" tabindex="0">
+        <img src="assets/palm-of-hand.svg" alt="Open menu" />
+    </button>    
+    
+    <div id="menu" class="menu">
+        <h3>Options</h3>
+        <div>
+            <label for="colorblind"  class="dropdown-label">Colorblind Mode:</label>
+            <select id="colorblind" onchange="applyColorblindMode()">
+                <option value="none">None</option>
+                <option value="protanopia">Protanopia</option>
+                <option value="deuteranopia">Deuteranopia</option>
+                <option value="tritanopia">Tritanopia</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="language">Language:</label>
+            <select id="language" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="tl">Tagalog</option>
+            </select>
+        </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
