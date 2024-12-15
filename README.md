@@ -8,7 +8,7 @@ There are two options to access the website:
 
 1. **Hosted Version**:  
    You can open the website directly by visiting:  
-   [https://hci-dxo.400badrequest.xyz/](https://hci-dxo.400badrequest.xyz/)
+   [https://hci-dxo.400badrequest.xyz/](https://hci-dxo.400badrequest.xyz/) or [https://hci-finals.vercel.app/](https://hci-finals.vercel.app/)
 
 2. **Local Version**:  
    - Clone this repository:
